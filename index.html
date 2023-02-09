@@ -5,60 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Frontend Mentor | QR code component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | QR code component</title>
-
   <style>
     body {
       background-color: hsl(212, 45%, 89%);
-      height: 98vh;
+      margin: 0;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Outfit', sans-serif;
     }
 
-    .component {
-      max-width: 220px;
+    main {
       text-align: center;
       background-color: hsl(0, 0%, 100%);
-      padding: 14px;
-      border-radius: 4%;
-      font-size: 15px;
+      padding: 1rem;
+      display: block;
+      border-radius: 0.75rem;
+      max-width: 250px;
     }
 
-    .qr-code {
-      border-radius: 6%;
-      height: 220px;
+    main>img {
+      border-radius: 0.75rem;
+      max-width: 100%;
     }
 
-    .heading {
+    main>h1 {
       font-weight: 700;
       color: hsl(218, 44%, 22%);
+      font-size: 1.3rem;
     }
 
-    .details {
+    main>p {
       font-weight: 400;
       color: hsl(220, 15%, 55%);
-      font-size: 14px;
-
+      margin-bottom: 1rem;
+      font-size: 15px;
     }
   </style>
 </head>
 
 <body>
-  <div class="component">
-    <img class="qr-code" src="images/image-qr-code.png" alt="qr-code">
-    <p class="heading">Improve your front-end skills by building projects</p>
-
+  <main>
+    <img src="images/image-qr-code.png" alt="qr-code">
+    <h1>Improve your front-end skills by building projects</h1>
     <p class="details">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
+  </main>
 </body>
 
 </html>
